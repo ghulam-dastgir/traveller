@@ -1,0 +1,342 @@
+/* CSS Reset */
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    line-height: 26px;
+}
+/* Navbar Starts */
+.navbar-fixed-top{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0!important;
+}
+.navbar-fixed-top ul li{
+    margin: auto 1px;
+}
+.navbar-fixed-top ul li a {
+    text-transform: uppercase;
+}
+.navbar-fixed-top ul li a:hover{
+    border-top: 2px  solid #007bff;
+    border-bottom: 2px  solid #007bff;
+}
+/* Navbar Ends */
+/* Home Banner Starts */
+#blog-banner,#aboutUs-banner,#contact-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 90vh;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1;
+}
+.single-blog-content{
+    overflow: auto;
+}
+#home-banner .home-banner-content{
+    position: absolute;
+    top: 50%;
+    left: 11.22%;
+}
+#home-banner .container h1,#blog-banner .container h1,#aboutUs-banner .container h1{
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: -5px -4px rgb(77, 77, 145),5px 4px rgb(77, 77, 145);
+    color: #ffffff;
+}
+/* Home Banner Ends */
+
+/* Welcome Section Starts */
+#welcome-section,#count-section,#populr-places{
+    min-height: 90vh;
+margin: 10rem auto;
+}
+#welcome-section h2{
+    border-left: 4px solid #28a745;
+    padding-left: 8px;
+}
+#welcome-section .row img{
+    transition: all 1s;
+}
+#welcome-section .row img:hover{
+    cursor: pointer;
+    transform:scale(0.7);
+    box-shadow: 0 0 20px  5px rgb(98, 98, 196);
+}
+/* Welcome Section Starts */
+/* Top Places Starts */
+#top-places .row a:hover{
+  color: #28a745;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* Count Section Starts */
+#count-section{
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    background-color: #f5f5f5;
+}
+#count-section .row .content .count_content {
+    display: flex;
+    align-items: center;
+}
+#count-section .row .content .count_content h5{
+    font-size: 1.48rem;
+    margin-left: 22px;
+}
+#count-section .row .content h3{
+    font-size: 1.1rem;
+    margin-left: -1.99rem;
+}
+/* Count Section Ends */
+/* Popular Places Starts */
+#populr-places{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    position: relative;
+    z-index: 1;
+}
+#populr-places::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/banner/istockphoto-539346285-1024x1024.jpg") no-repeat center center/100% fixed;
+    opacity: 0.4;
+    z-index: -1;
+} 
+#populr-places .carousel .carousel-inner .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
+#populr-places .carousel .carousel-inner .content h3{
+    color: #ffffff;
+}
+#populr-places .carousel .carousel-inner .content img{
+    box-shadow: 0 0 10px 2px #007bff !important;
+}
+#populr-places .carousel-indicators{
+    position: absolute;
+    bottom: -2.33rem;
+    right: 3.33rem;
+}
+.Testimonials{
+    position: absolute;
+    top: 0;
+}
+/* Popular Places Ends */
+/* Visit Famous Places Starts */
+#visit-place .row{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/* Visit Famous Places Ends */
+/* Blog Section Starts */
+#blog-banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/banner/istockphoto-539346285-1024x1024.jpg") no-repeat center center/cover fixed ;
+    opacity: 0.3;
+    z-index: -1;
+}
+#blog-section{
+    margin: 10rem 0;
+}
+#blog-section .container .heading h5{
+    border-left: 3px solid #007bff;
+    padding-left: 5px;
+}
+#blog-section .container .card .card-body a:hover{
+    color: #007bff;
+}
+#blog-section .container  .blog-post h5{
+    font-weight: lighter;
+    font-size: 17px;
+}
+/* Blog Section Ends */
+/* About Us Starts */
+#aboutUs-banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/banner/lahore-2299773_1280.jpg") no-repeat center center/cover fixed ;
+    opacity: 0.3;
+    z-index: -1;
+}
+#company-section ,#chose-us-section{
+    margin: 10rem auto;
+}
+#traveler-services .container .main-content,#chose-us-section .container .main-content{
+    width: 50%;
+    margin: auto;
+}
+#traveler-services .row ,#chose-us-section .row{
+    margin-top: 7rem;
+}
+#chose-us-section .row .side-content{
+    display: flex;
+    align-items: center;
+}
+/* About Us Ends */
+/* Contact Us Banner Starts */
+#contact-banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/banner/lahore-2299773_1280.jpg") no-repeat center center/cover fixed ;
+    opacity: 0.3;
+    z-index: -1;
+}
+.contact-form{
+    margin: 8rem auto;
+}
+/* Contact Us Banner Ends */
+footer{
+    min-height: 50vh;
+}
+footer .nav{
+    display: flex;
+    flex-direction: column;
+    margin: 0!important;
+}
+/* ///////////////////////////////////// DASHBOARD ////////////////////////////////// */
+/* Dashbaord Main Content Starts */
+#dashboard-content{
+overflow: hidden;
+}
+.custom-navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+#dashboard-content .row .custom-sidebar{
+    position: fixed;
+    /* left: 0; */
+    width: 17%;
+    min-height: 90vh;
+    padding-top: 1rem;
+    /* overflow-y: scroll; */
+}
+#dashboard-content .row .custom-sidebar li a{
+    font-size: 1.1rem;
+    color: #ffffff!important;
+}
+#dashboard-content .row .custom-sidebar li{
+    border-top: 1px solid #69adf5;
+}
+#dashboard-content .row .custom-sidebar .collapse a {
+    margin: 0!important;
+    padding:1px 19px;
+}
+#dashboard-content .row .sidebar li a:hover{
+    color: #d5d7da!important;
+}
+/* Left Content Starts */
+#left-content .row .custom-card .card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/* Left Content Ends */
+/* Dashbaord Main Content Starts */
+/* Utillty Classes */
+a{
+    text-decoration: none!important;
+}
+.up-c{
+    text-transform: uppercase;
+}
+.cap-c{
+    text-transform: capitalize;
+}
+.carousel-custom{
+    height: 0;
+    position: absolute;
+    top: 50%;
+    padding: 0;
+    width: 20px;
+    margin: 0 5rem;
+}
+.dashboard-custom-nav{
+    margin-right: 5rem;
+}
+.m-log-l-5{
+    margin-left: 5rem;
+}
+.box{
+    display: flex;
+}
+.comment-type{
+    border: none!important;
+    border-bottom: 2px solid #000000!important;
+    outline: none;
+    width: 100%;
+}
+.coment-button{
+    background-color: #f5f5f5;
+    border: none;
+    float: right;
+    padding: 12px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #007bff;
+}
+.coment-button:hover{
+    background-color: #007bff;
+    color: #ffffff;
+}
+.sidebar-scroll{
+    overflow-y:scroll;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    /* background-color: #007bff; */
+}
+::-webkit-scrollbar-track{
+    background-color: #e0e0e0;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 12px;
+    background-color: #007bff;
+}
+textarea{
+    resize: none;
+}
+/* Media Query */
+@media screen and (max-width:966px){
+    #dashboard-content .row .custom-sidebar{
+        position: inherit;
+        height: inherit;
+        width: 100%;
+    }
+}
